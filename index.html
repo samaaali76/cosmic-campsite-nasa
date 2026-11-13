@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the stories of inactive space equipment on the Moon and Mars.">
+  <title>Cosmic Campsite | NASA Space Apps Challenge 2026</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/basmala.css">
+  <link rel="stylesheet" href="css/samaa.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Cosmic Campsite home">✦ Cosmic Campsite</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav id="primary-nav" aria-label="Main navigation">
+      <a href="#destinations">Destinations</a><a href="#artifacts">Artifacts</a><a href="#stories">Stories</a><a href="#timeline">Timeline</a><a href="#quiz">Quiz</a>
+    </nav>
+  </header>
+  <main id="home">
+    <section class="hero">
+      <p class="eyebrow">NASA Space Apps Challenge 2026</p>
+      <h1>Every footprint<br>has a story.</h1>
+      <p>Visit the Moon and Mars to discover the machines explorers left behind—and the science they made possible.</p>
+      <a class="button" href="#destinations">Start exploring</a>
+    </section>
+    <section id="destinations" class="section">
+      <div class="section-heading"><p class="eyebrow">Choose your destination</p><h2>Worlds beyond Earth</h2></div>
+      <div id="destination-list" class="card-grid" aria-live="polite"></div>
+    </section>
+    <section id="artifacts" class="section section-alt">
+      <div class="section-heading"><p class="eyebrow">Left on another world</p><h2>Field artifacts</h2></div>
+      <div id="artifact-list" class="card-grid" aria-live="polite"></div>
+    </section>
+    <section id="stories" class="section">
+      <div class="section-heading"><p class="eyebrow">Learn as you explore</p><h2>Mission stories</h2></div>
+      <div id="story-list" class="card-grid" aria-live="polite"></div>
+    </section>
+    <section id="timeline" class="section section-alt">
+      <div class="section-heading"><p class="eyebrow">Milestones in exploration</p><h2>Mission timeline</h2></div>
+      <div id="timeline-list" class="timeline-list" aria-live="polite"></div>
+      <article id="timeline-detail" class="detail-panel" aria-live="polite"><p>Select a milestone to read its story.</p></article>
+    </section>
+    <section id="quiz" class="section">
+      <div class="section-heading"><p class="eyebrow">Check your knowledge</p><h2>Mission quiz</h2></div>
+      <div id="quiz-panel" class="quiz-panel" aria-live="polite"></div>
+    </section>
+    <section id="progress" class="section section-alt">
+      <div class="section-heading"><p class="eyebrow">Your field journal</p><h2>Exploration progress</h2></div>
+      <div id="progress-panel" class="progress-panel" aria-live="polite"></div>
+    </section>
+  </main>
+  <footer><p>Cosmic Campsite · An educational project for NASA Space Apps Challenge 2026</p></footer>
+</body>
+</html>

@@ -1,0 +1,4 @@
+[
+  {"id":"q-apollo-stage","question":"Which part of the Apollo Lunar Module stayed on the Moon after liftoff?","options":["The descent stage","The command module","The ascent stage"],"answerIndex":0,"explanation":"The descent stage served as the landing platform and remained on the surface."},
+  {"id":"q-sojourner","question":"What was Sojourner designed to demonstrate on Mars?","options":["A crewed habitat","Rover mobility and surface science","A sample return launch"],"answerIndex":1,"explanation":"Sojourner demonstrated robotic mobility and studied nearby Martian rocks and soil."}
+]

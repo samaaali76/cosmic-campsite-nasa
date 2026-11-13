@@ -1,0 +1,4 @@
+[
+  {"id":"apollo-11","year":1969,"title":"First crewed Moon landing","mission":"Apollo 11","detail":"Apollo 11 landed astronauts Neil Armstrong and Buzz Aldrin on the Moon. The Lunar Module's descent stage remained on the surface when the ascent stage departed.","artifact":"Apollo 11 Lunar Module descent stage"},
+  {"id":"pathfinder","year":1997,"title":"A rover explores Mars","mission":"Mars Pathfinder","detail":"NASA's Pathfinder mission delivered the Sojourner rover to Mars. The rover investigated nearby rocks and soil, demonstrating a new way to explore the surface.","artifact":"Sojourner rover"}
+]

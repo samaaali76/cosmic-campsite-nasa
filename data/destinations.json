@@ -1,0 +1,4 @@
+[
+  {"id":"moon","name":"The Moon","type":"Natural satellite","icon":"◐","description":"A nearby world where Apollo astronauts left equipment that continues to mark humanity's first crewed visits beyond Earth."},
+  {"id":"mars","name":"Mars","type":"Terrestrial planet","icon":"🔴","description":"A rocky world explored by robotic landers and rovers, some of which remain as landmarks after their missions ended."}
+]

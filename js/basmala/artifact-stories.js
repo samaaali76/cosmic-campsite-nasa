@@ -116,7 +116,7 @@ async function renderArtifactStory(requestedId = getStoredStoryId()) {
   const journeyActions = document.createElement('nav');
   journeyActions.className = 'journey-actions';
   journeyActions.setAttribute('aria-label', 'Continue learning');
-  journeyActions.innerHTML = `<a href="#timeline" data-related-timeline-story="${story.id}">Explore related timeline events</a><a href="#artifacts">Continue to checkpoints</a><a href="#quiz">Continue to quiz</a><a href="#progress">View progress</a>`;
+  journeyActions.innerHTML = `<a href="#timeline" data-related-timeline-story="${story.id}">Explore related timeline events</a><a href="#equipment">Continue to checkpoints</a><a href="#quiz">Continue to quiz</a><a href="#progress">View progress</a>`;
   host.append(journeyActions);
   host.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }

@@ -1,4 +1,35 @@
 [
-  {"id":"moon","name":"The Moon","type":"Natural satellite","icon":"◐","description":"A nearby world where Apollo astronauts left equipment that continues to mark humanity's first crewed visits beyond Earth."},
-  {"id":"mars","name":"Mars","type":"Terrestrial planet","icon":"🔴","description":"A rocky world explored by robotic landers and rovers, some of which remain as landmarks after their missions ended."}
+  {
+    "id": "moon",
+    "name": "The Moon",
+    "type": "Earth's natural satellite",
+    "description": "Trace the horizon walked by Apollo crews and prepare to explore a world shaped by ancient impacts.",
+    "facts": ["About 384,400 km from Earth on average", "Surface gravity is about one-sixth of Earth's", "Its permanently shadowed polar regions hold water ice"],
+    "image": "https://images-assets.nasa.gov/image/as11-40-5874/as11-40-5874~large.jpg",
+    "imageAlt": "Apollo 11 astronaut beside the Lunar Module on the Moon",
+    "imageCredit": "NASA / Apollo 11",
+    "accent": "lunar"
+  },
+  {
+    "id": "mars",
+    "name": "Mars",
+    "type": "The Red Planet",
+    "description": "Follow robotic explorers across a cold desert world in search of clues to its watery past and habitability.",
+    "facts": ["A day lasts about 24.6 hours", "Its atmosphere is mostly carbon dioxide and very thin", "Olympus Mons is the largest volcano in the Solar System"],
+    "image": "https://images-assets.nasa.gov/image/PIA00407/PIA00407~large.jpg",
+    "imageAlt": "Global color view of Mars",
+    "imageCredit": "NASA / JPL / USGS",
+    "accent": "mars"
+  },
+  {
+    "id": "deep-space",
+    "name": "Deep Space",
+    "type": "Beyond our Solar System",
+    "description": "Look into stellar nurseries and distant galaxies, where observatories turn faint light into cosmic history.",
+    "facts": ["The Carina Nebula is roughly 7,600 light-years away", "Webb observes the universe primarily in infrared light", "Light from distant objects takes time to reach us"],
+    "image": "https://images-assets.nasa.gov/image/carina_nebula/carina_nebula~large.jpg",
+    "imageAlt": "Webb's Cosmic Cliffs in the Carina Nebula",
+    "imageCredit": "NASA / ESA / CSA / STScI",
+    "accent": "deep-space"
+  }
 ]

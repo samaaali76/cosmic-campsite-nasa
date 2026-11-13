@@ -208,11 +208,44 @@
 @media (max-width: 600px) { #story-list.card-grid { grid-template-columns: minmax(0, 1fr); width: min(100%, 460px); } .field-note-media { height: 210px; } #story-list .field-note-content { padding: 1rem; } }
 @media (prefers-reduced-motion: reduce) { #story-list .field-note-card, .field-note-media img, #story-list .field-note-card .story-action { transition: none; } #story-list .field-note-card:hover, #story-list .field-note-card .story-action:hover { transform: none; } }
 
-/* The opening frame uses the existing NASA image rather than simulated planet art. */
-.hero { min-height: min(850px, 88vh); min-height: min(850px, 88svh); overflow: hidden; isolation: isolate; border-bottom: 1px solid #ffffff20; background: linear-gradient(90deg, #050816f2 0%, #050816b8 46%, #05081625 100%), linear-gradient(0deg, #050816 0%, transparent 47%), url('https://images-assets.nasa.gov/image/PIA17011/PIA17011~large.jpg') center 44%/cover no-repeat, var(--space-gradient); }
-.hero::before { content: ''; position: absolute; z-index: -1; inset: 0; pointer-events: none; background: radial-gradient(1px 1px at 16% 26%, #fff9 50%, transparent 70%), radial-gradient(1px 1px at 44% 72%, #fff8 50%, transparent 70%), radial-gradient(1px 1px at 81% 20%, #fff9 50%, transparent 70%); background-size: 280px 240px; opacity: .32; }
-.hero::after { opacity: .5; }
-.hero > * { position: relative; z-index: 1; }
+/* Mission launch frame: the full NASA Earthrise photo stays uncropped in its own visual. */
+.hero { position: relative; display: grid; grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); align-items: center; gap: clamp(1rem, 3vw, 4rem); min-height: min(880px, 90svh); padding: clamp(4rem, 7vw, 6.5rem) clamp(1.2rem, 7vw, 7rem) 5rem; overflow: hidden; isolation: isolate; border-bottom: 1px solid #ffffff20; background: radial-gradient(ellipse 44% 68% at 82% 49%, #6c48ba35, transparent 74%), radial-gradient(ellipse 40% 60% at 12% 4%, #168da22a, transparent 72%), linear-gradient(135deg, #050816 5%, #080d20 54%, #10102b 100%); }
+.hero::before { content: ''; position: absolute; z-index: -1; inset: -20%; pointer-events: none; background: radial-gradient(1px 1px at 16% 26%, #fff9 50%, transparent 70%), radial-gradient(1px 1px at 44% 72%, #fff8 50%, transparent 70%), radial-gradient(1.5px 1.5px at 81% 20%, #fff9 50%, transparent 70%), radial-gradient(1px 1px at 67% 82%, #50ddf588 50%, transparent 70%); background-size: 280px 240px, 340px 300px, 390px 280px, 420px 360px; opacity: .42; animation: star-drift 55s linear infinite; }
+.hero::after { z-index: -1; background: radial-gradient(ellipse at 73% 42%, #9d79ff12, transparent 45%), linear-gradient(90deg, #05081630, transparent 72%); opacity: 1; }
+.hero__copy, .hero__visual { position: relative; z-index: 1; }
+.hero__copy { max-width: 660px; animation: hero-copy-in .85s var(--ease) both; }
+.hero__mission-tag { display: inline-flex; align-items: center; gap: .6rem; margin: 0 0 1.35rem; padding: .42rem .72rem; border: 1px solid #50ddf544; border-radius: 999px; background: #071421a8; color: #d1f7ff; font: 650 .65rem Manrope, sans-serif; letter-spacing: .13em; text-transform: uppercase; box-shadow: 0 0 28px #50ddf510; }
+.hero__mission-tag span { width: .48rem; height: .48rem; border-radius: 50%; background: #70f2c0; box-shadow: 0 0 0 4px #70f2c022, 0 0 14px #70f2c0a8; animation: mission-beacon 2.4s ease-in-out infinite; }
+.hero__copy .eyebrow { margin: .7rem 0 .35rem; color: #83e9f2; }
+.hero h1 { max-width: 780px; margin: .2rem 0 1.25rem; font: 550 clamp(2.8rem, 5.45vw, 5.8rem)/1.02 Manrope, sans-serif; letter-spacing: -.075em; text-wrap: balance; }
+.hero h1 em { color: transparent; font-style: normal; background: linear-gradient(105deg, #a8f4ff 4%, #b8a5ff 54%, #ffce9b 98%); -webkit-background-clip: text; background-clip: text; }
+.hero__intro { max-width: 43ch; margin: 0; color: #d2d9eb; font-size: clamp(1rem, 1.35vw, 1.15rem); line-height: 1.8; }
+.hero-actions { gap: .85rem; margin-top: 1.6rem; }
+.hero-actions .button, .hero-actions .button-secondary { min-height: 3.2rem; margin-top: 0; padding-inline: 1.2rem; }
+.hero-actions .button { background: linear-gradient(110deg, #77edf3, #b4a4ff); box-shadow: 0 8px 34px #71dff126; }
+.hero-actions .button:hover { box-shadow: 0 10px 38px #71dff155; }
+.hero-actions .button-secondary { background: #ffffff08; border-color: #ffffff35; backdrop-filter: blur(12px); }
+.hero-actions .button-secondary:hover { border-color: #b8a5ff99; background: #b8a5ff16; }
+.hero__stats { display: flex; align-items: center; gap: clamp(.7rem, 1.4vw, 1.3rem); margin-top: clamp(1.7rem, 3vw, 2.8rem); color: #aeb9d1; font-size: .67rem; letter-spacing: .11em; text-transform: uppercase; }
+.hero__stats span { display: grid; gap: .2rem; }
+.hero__stats strong { color: #f1e7ff; font: 700 .86rem Manrope, sans-serif; letter-spacing: .08em; }
+.hero__stats i { width: 1px; height: 1.8rem; background: linear-gradient(transparent, #b8a5ff88, transparent); }
+.hero__visual { display: grid; justify-items: center; width: min(100%, 650px); margin: 0 auto; padding: 1rem; }
+.hero__image { display: block; width: min(100%, 500px); height: auto; max-height: min(64svh, 520px); object-fit: contain; border: 0; border-radius: 0; background: transparent; mix-blend-mode: screen; mask-image: radial-gradient(ellipse 38% 38% at center, #000 80%, transparent 100%); filter: drop-shadow(0 26px 55px #236ce233); animation: hero-image-float 8s ease-in-out infinite; }
+.hero__image-caption { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: .15rem .8rem; width: min(100%, 590px); margin-top: .8rem; padding: .7rem .9rem; border: 1px solid #ffffff20; border-radius: .8rem; background: #080c1dcf; backdrop-filter: blur(14px); }
+.hero__image-caption span:first-child { grid-row: span 2; color: #d9ccff; font: 700 .88rem Manrope, sans-serif; }
+.hero__image-caption span:nth-child(2) { color: #e7eaf4; font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; }
+.hero__image-caption span:last-child { color: #9ca9c4; font-size: .65rem; }
+.hero__orbit { position: absolute; z-index: -1; width: 95%; aspect-ratio: 1; border: 1px solid #b8a5ff12; border-radius: 50%; pointer-events: none; }
+.hero__orbit--one { transform: scaleY(.43) rotate(-24deg); animation: orbit-turn 34s linear infinite; }
+.hero__orbit--two { width: 110%; border-color: #50ddf213; transform: scaleY(.62) rotate(35deg); animation: orbit-turn 48s linear infinite reverse; }
+.hero__scroll-cue { position: absolute; z-index: 1; bottom: 1rem; left: 50%; display: flex; align-items: center; gap: .55rem; transform: translateX(-50%); color: #8995af; font: 650 .58rem Manrope, sans-serif; letter-spacing: .17em; text-transform: uppercase; }
+.hero__scroll-cue span { width: 1rem; height: 1rem; border-right: 1px solid #9eddf0; border-bottom: 1px solid #9eddf0; transform: rotate(45deg) translateY(-3px); animation: cue-bob 1.8s ease-in-out infinite; }
+@keyframes hero-copy-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes hero-image-float { 0%, 100% { transform: scale(1.35) translateY(0); } 50% { transform: scale(1.35) translateY(-9px); } }
+@keyframes mission-beacon { 50% { box-shadow: 0 0 0 7px #70f2c00a, 0 0 18px #70f2c0d0; } }
+@keyframes orbit-turn { to { rotate: 360deg; } }
+@keyframes cue-bob { 50% { translate: 0 4px; } }
 .artifact-story-index { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1rem, 2vw, 1.5rem); }
 .artifact-story-index__card { min-width: 0; overflow: hidden; padding: 0 0 1.2rem; border: 1px solid #b8a5ff2b; background: linear-gradient(150deg, #17182f, #0b1021 76%); box-shadow: 0 16px 42px #0005; transition: transform .3s var(--ease), border-color .3s, box-shadow .3s; }
 .artifact-story-index__card:hover { transform: translateY(-5px); border-color: #b8a5ff78; box-shadow: 0 24px 52px #0007, 0 0 22px #8d7bd21b; }
@@ -230,5 +263,7 @@
 .artifact-story-index__card > .equipment-story-link { margin-top: .5rem; }
 @media (max-width: 900px) { .artifact-story-index { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .artifact-story-index { grid-template-columns: minmax(0, 1fr); width: min(100%, 460px); margin-inline: auto; } .artifact-story-index__media { height: 220px; } }
-@media (max-width: 700px) { .hero { min-height: 76vh; min-height: 76svh; background-position: 60% center; } }
-@media (prefers-reduced-motion: reduce) { .artifact-story-index__card, .artifact-story-index__media img { transition: none; } .artifact-story-index__card:hover { transform: none; } }
+@media (max-width: 900px) { .hero { display: block; min-height: min(760px, 88svh); padding: 4.6rem clamp(1.2rem, 7vw, 4rem) 4.3rem; } .hero__copy { width: min(72%, 600px); } .hero__visual { position: absolute; top: 50%; right: -1.6rem; width: 58%; margin: 0; padding: .4rem; transform: translateY(-50%); } .hero__image { width: 100%; max-height: 62svh; transform: none; animation: hero-image-float-small 8s ease-in-out infinite; } .hero__image-caption { width: min(100%, 440px); margin-left: auto; } .hero__stats { margin-top: 1.5rem; } }
+@media (max-width: 600px) { .hero { display: grid; grid-template-columns: minmax(0, 1fr); min-height: auto; padding: 3.1rem 1.1rem 3.8rem; gap: .8rem; } .hero__copy { width: auto; } .hero h1 { font-size: clamp(2.6rem, 12vw, 4.2rem); } .hero__mission-tag { font-size: .56rem; } .hero__visual { position: relative; inset: auto; width: min(100%, 430px); margin: 0 auto; padding: .35rem; transform: none; } .hero__image { width: min(100%, 390px); max-height: none; } .hero__image-caption { grid-template-columns: 1fr; gap: .2rem; margin-inline: auto; text-align: center; } .hero__image-caption span:first-child { grid-row: auto; } .hero__stats { flex-wrap: wrap; gap: .65rem; font-size: .55rem; } .hero__scroll-cue { display: none; } }
+@keyframes hero-image-float-small { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+@media (prefers-reduced-motion: reduce) { .hero::before, .hero__copy, .hero__mission-tag span, .hero__image, .hero__orbit, .hero__scroll-cue span, .artifact-story-index__card, .artifact-story-index__media img { animation: none; transition: none; } .artifact-story-index__card:hover { transform: none; } }

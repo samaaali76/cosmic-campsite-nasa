@@ -44,9 +44,15 @@ async function renderArtifactStoryIndex() {
       equipment: equipment.find((item) => item.id === story.equipmentId && item.storyId === story.id)
     })).filter((entry) => entry.equipment);
     host.innerHTML = linkedStories.map(({ story, equipment: item }) => `<article class="card artifact-story-index__card">
+      <figure class="artifact-story-index__media"><img src="${item.image}" alt="${item.imageAlt}" loading="lazy" decoding="async"><span class="equipment-image-fallback" hidden>NASA image unavailable</span></figure>
       <p class="meta">${item.destinationId.replace('-', ' ')} · ${item.mission}</p><h3>${item.name}</h3><p>${item.description}</p>
       <a class="equipment-story-link" href="#stories" data-open-artifact-story="${story.id}" data-story-destination="${item.destinationId}">Read mission story <span aria-hidden="true">↗</span></a>
     </article>`).join('');
+    host.querySelectorAll('.artifact-story-index__media img').forEach((image) => image.addEventListener('error', () => {
+      image.classList.add('image-unavailable');
+      const fallback = image.parentElement.querySelector('.equipment-image-fallback');
+      if (fallback) fallback.hidden = false;
+    }, { once: true }));
     if (linkedStories.length !== stories.length) console.warn('Some mission stories have no matching equipment entry.');
   } catch (error) {
     host.innerHTML = '<p class="empty-state">Mission stories could not load. Please try again later.</p>';

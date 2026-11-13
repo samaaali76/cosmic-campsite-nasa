@@ -18,18 +18,20 @@ export async function renderStories() {
       return response.json();
     })
   ]);
-  const imageByCategory = {
+  const fallbackByCategory = {
     Moon: destinations.find((destination) => destination.id === 'moon'),
     Mars: destinations.find((destination) => destination.id === 'mars'),
-    Asteroids: { image: 'https://photojournal.jpl.nasa.gov/jpeg/PIA03119.jpg', imageAlt: 'Asteroid Eros photographed by NASA’s NEAR Shoemaker mission', imageCredit: 'NASA / JPL / NEAR Shoemaker', source: 'https://science.nasa.gov/mission/near-shoemaker/' },
+    Asteroids: destinations.find((destination) => destination.id === 'deep-space'),
     'Deep Space / Other Orbits': destinations.find((destination) => destination.id === 'deep-space')
   };
   host.innerHTML = items.map((item, index) => {
     const complete = progress.completedChapters.includes(item.id);
-    const image = imageByCategory[item.category] || imageByCategory['Deep Space / Other Orbits'];
-    const creditHref = image?.source || image?.image || item.sourceUrl;
+    const fallback = fallbackByCategory[item.category] || fallbackByCategory['Deep Space / Other Orbits'];
+    const imageUrl = item.image || fallback?.image || '';
+    const imageAlt = item.imageAlt || fallback?.imageAlt || `NASA mission image related to ${item.category}`;
+    const imageCredit = item.imageCredit || fallback?.imageCredit || 'NASA image source';
     return `<article class="story-card field-note-card${complete ? ' is-complete' : ''}">
-      <figure class="field-note-media"><img src="${image?.image || ''}" alt="${image?.imageAlt || 'NASA mission image related to ' + item.category}" loading="lazy" decoding="async"><span class="field-note-fallback" hidden>NASA image unavailable</span><figcaption><a href="${creditHref}" target="_blank" rel="noopener noreferrer">${image?.imageCredit || 'NASA image source'} ↗</a></figcaption></figure>
+      <figure class="field-note-media"><img src="${imageUrl}" alt="${imageAlt}" loading="lazy" decoding="async"><span class="field-note-fallback" hidden>NASA image unavailable</span><figcaption><a href="${item.image || item.sourceUrl}" target="_blank" rel="noopener noreferrer">${imageCredit} ↗</a></figcaption></figure>
       <div class="field-note-content"><p class="field-note-index">FIELD NOTE / ${String(index + 1).padStart(2, '0')} <span>${item.category}</span></p>
       <p class="meta">${item.mission}</p><h3>${item.storyTitle}</h3><p class="field-note-description">${item.story}</p>
       <a class="source-link" href="${item.sourceUrl}" target="_blank" rel="noopener noreferrer">Open NASA reference <span aria-hidden="true">↗</span></a>

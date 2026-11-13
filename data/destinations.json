@@ -27,9 +27,9 @@
     "type": "Beyond our Solar System",
     "description": "Look into stellar nurseries and distant galaxies, where observatories turn faint light into cosmic history.",
     "facts": ["The Carina Nebula is roughly 7,600 light-years away", "Webb observes the universe primarily in infrared light", "Light from distant objects takes time to reach us"],
-    "image": "https://images-assets.nasa.gov/image/carina_nebula/carina_nebula~large.jpg",
-    "imageAlt": "Webb's Cosmic Cliffs in the Carina Nebula",
-    "imageCredit": "NASA / ESA / CSA / STScI",
+    "image": "https://images-assets.nasa.gov/image/PIA17011/PIA17011~large.jpg",
+    "imageAlt": "The spiral galaxy Messier 94, seen in a wide-field image of deep space",
+    "imageCredit": "NASA / ESA / Hubble Heritage Team",
     "accent": "deep-space"
   }
 ]

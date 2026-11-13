@@ -1,0 +1,92 @@
+[
+  {
+    "id":"apollo-lunar-module","equipmentId":"apollo-lunar-module",
+    "missionOverview":"Apollo 11's Lunar Module, named Eagle, was the two-stage spacecraft that took Neil Armstrong and Buzz Aldrin from lunar orbit to the Moon and back to the command module. NASA sent it to accomplish the first crewed lunar landing and return the astronauts safely.",
+    "majorDiscoveries":["The crew returned about 21.5 kilograms of lunar samples for study on Earth.","Apollo 11 astronauts deployed a passive seismometer and a laser-ranging reflector, giving scientists new ways to study the Moon's interior and measure the Earth–Moon distance."],
+    "status":"The Apollo 11 mission ended in 1969. Eagle's ascent stage returned the astronauts to lunar orbit; the descent stage was left on the lunar surface and is no longer operating.",
+    "location":"The descent stage remains at Tranquility Base in the Sea of Tranquility on the Moon. NASA's Lunar Reconnaissance Orbiter has imaged the stage and the astronauts' surface tracks.",
+    "facts":["Eagle landed on July 20, 1969.","The Lunar Module had separate descent and ascent stages.","The descent stage also supported the crew's first steps onto the surface."],
+    "sources":[{"label":"Apollo 11 landing site from LRO","url":"https://science.nasa.gov/resource/apollo-11-landing-site-from-dawn-to-dusk/"},{"label":"Apollo 11 mission overview","url":"https://nasa.gov/wp-content/uploads/static/history/alsj/a11/a11ov.html"}]
+  },
+  {
+    "id":"lunar-roving-vehicle","equipmentId":"lunar-roving-vehicle",
+    "missionOverview":"The Lunar Roving Vehicle was a foldable, battery-powered electric cart carried by Apollo 15, 16, and 17. NASA sent it so astronauts on the longer later missions could travel farther from their landing craft and investigate more of the lunar terrain.",
+    "majorDiscoveries":["The rover extended the range of Apollo surface traverses, helping crews inspect geological features and return more lunar samples.","On Apollo 15, astronauts drove about 17.5 miles (28 kilometers) and collected more than 170 pounds of lunar samples during the mission."],
+    "status":"The Apollo missions ended decades ago. The three Lunar Roving Vehicles were left on the Moon and are no longer operational.",
+    "location":"The Apollo 15 rover remains near the Hadley–Apennine landing area on the Moon. The Apollo 16 and 17 rovers remain at their respective lunar landing sites.",
+    "facts":["Apollo 15 was the first mission to use the rover.","The rover folded up to fit in a compartment on the Lunar Module descent stage.","Astronauts drove one on each of the final three Apollo lunar landing missions."],
+    "sources":[{"label":"Apollo 15 mission details","url":"https://www.nasa.gov/missions/apollo/apollo-15-mission-details/"},{"label":"The Apollo Lunar Roving Vehicle","url":"https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo_lrv.html"}]
+  },
+  {
+    "id":"lunar-reconnaissance-orbiter","equipmentId":"lunar-reconnaissance-orbiter",
+    "missionOverview":"The Lunar Reconnaissance Orbiter (LRO) is a robotic spacecraft launched in 2009 to map the Moon and measure its surface environment. Its observations help scientists understand lunar terrain and help mission planners assess possible exploration areas.",
+    "majorDiscoveries":["LRO mapped lunar topography and measured temperature, composition, and radiation conditions in detail.","Its observations provide evidence for water ice in permanently shadowed polar regions and have revealed traces of past lunar landings, including Apollo sites."],
+    "status":"NASA lists LRO as an active mission. It continues to gather and return lunar science data.",
+    "location":"LRO is orbiting the Moon. It repeatedly passes over different parts of the lunar surface to collect measurements and images.",
+    "facts":["LRO launched with the LCROSS mission in June 2009.","Its cameras have imaged Apollo landing sites from orbit.","Its measurements support planning for future robotic and crewed lunar exploration."],
+    "sources":[{"label":"NASA LRO mission","url":"https://science.nasa.gov/mission/lro/"},{"label":"LRO science and discoveries","url":"https://science.nasa.gov/mission/lro/about/"}]
+  },
+  {
+    "id":"curiosity","equipmentId":"curiosity",
+    "missionOverview":"Curiosity is NASA's Mars Science Laboratory rover, a mobile laboratory sent to determine whether Gale Crater ever had conditions that could support microbial life. It landed in 2012 and studies rocks, soil, and the Martian atmosphere as it explores.",
+    "majorDiscoveries":["Rounded pebbles and layered rocks show that ancient streams and long-lived lakes once existed in Gale Crater.","Curiosity found organic molecules in drilled Martian rocks. These molecules are building blocks of life, but their presence is not evidence that life existed on Mars.","Its measurements show that ancient Mars had environments that could have supported microbial life."],
+    "status":"Curiosity remains an active NASA mission and continues science exploration on Mars.",
+    "location":"Curiosity is on the surface of Mars, exploring Gale Crater and the lower slopes of Mount Sharp, the mountain inside the crater.",
+    "facts":["Curiosity is about the size of a small SUV.","It carries a laser that can study the composition of rocks from a distance.","The rover's onboard laboratory analyzes samples it drills or scoops."],
+    "sources":[{"label":"NASA Curiosity mission","url":"https://science.nasa.gov/mission/msl-curiosity/"},{"label":"Curiosity science highlights","url":"https://science.nasa.gov/mission/msl-curiosity/science-highlights/"}]
+  },
+  {
+    "id":"perseverance","equipmentId":"perseverance",
+    "missionOverview":"Perseverance is NASA's Mars 2020 rover. It was sent to Jezero Crater to study an ancient lake and river-delta environment, search for signs of ancient microbial life, and collect and seal rock and regolith samples for possible return to Earth by a future mission.",
+    "majorDiscoveries":["The rover is examining rocks and landscape features that record Jezero Crater's watery past.","Perseverance has collected and sealed a varied set of rock and regolith samples, preserving them for possible future study in laboratories on Earth.","Its investigations add evidence about Mars' geology, climate history, and past habitability; they have not confirmed past life."],
+    "status":"Perseverance remains an active mission, exploring Mars and collecting scientific data and samples.",
+    "location":"The rover is on the surface of Mars in Jezero Crater, a 45-kilometer-wide impact crater that once held a lake. Its route and work area change as it drives through the region.",
+    "facts":["Perseverance landed on Feb. 18, 2021.","It carries seven primary science instruments.","The rover carried Ingenuity to Mars attached beneath its chassis."],
+    "sources":[{"label":"NASA Perseverance mission","url":"https://science.nasa.gov/mission/mars-2020-perseverance/"},{"label":"Perseverance science and samples","url":"https://science.nasa.gov/mission/mars-2020-perseverance/science/"}]
+  },
+  {
+    "id":"ingenuity","equipmentId":"ingenuity",
+    "missionOverview":"Ingenuity was a small, solar-powered helicopter carried to Mars by Perseverance. NASA sent it as a technology demonstration to test whether powered, controlled flight was possible in Mars' very thin atmosphere and to learn how aerial vehicles might support future exploration.",
+    "majorDiscoveries":["On April 19, 2021, Ingenuity completed the first powered, controlled flight on another planet.","It completed 72 flights over nearly three years, demonstrating that aerial scouting on Mars was practical and returning engineering data for future rotorcraft."],
+    "status":"NASA ended Ingenuity's mission on Jan. 25, 2024, after damage to a rotor blade during its 72nd flight left it unable to fly. Flight operations have ended.",
+    "location":"Ingenuity remains on the surface of Mars in Neretva Vallis, near the area the team nicknamed Valinor Hills, within Jezero Crater.",
+    "facts":["The original plan called for up to five test flights over 30 days.","Ingenuity's 72 flights far exceeded that plan.","Perseverance acted as Ingenuity's communications relay while they operated together."],
+    "sources":[{"label":"NASA Ingenuity mission and updates","url":"https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/"},{"label":"NASA report on Ingenuity's final flight and location","url":"https://science.nasa.gov/blog/farewell-to-our-flying-friend-and-closing-in-on-the-crater-rim/"}]
+  },
+  {
+    "id":"jwst","equipmentId":"jwst",
+    "missionOverview":"The James Webb Space Telescope is a space observatory built to study the universe primarily in infrared light. NASA, ESA, and CSA developed it to investigate topics including the first galaxies, star and planet formation, and the atmospheres of planets around other stars.",
+    "majorDiscoveries":["Webb has observed galaxies from the early universe, including galaxies whose light was emitted only a few hundred million years after the Big Bang.","Its instruments have measured molecules in exoplanet atmospheres and revealed star formation through cosmic dust."],
+    "status":"Webb is an active observatory conducting science observations.",
+    "location":"Webb orbits the Sun near the Sun–Earth L2 point, about 1.5 million kilometers from Earth. It travels around the Sun along with Earth rather than orbiting Earth like Hubble.",
+    "facts":["Webb launched on Dec. 25, 2021.","Its primary mirror is made of 18 hexagonal segments.","Its large sunshield helps keep the infrared telescope cold."],
+    "sources":[{"label":"NASA Webb mission","url":"https://science.nasa.gov/mission/webb/"},{"label":"Webb's early-universe findings","url":"https://science.nasa.gov/mission/webb/early-universe/"},{"label":"Webb's orbit","url":"https://science.nasa.gov/mission/webb/orbit/"}]
+  },
+  {
+    "id":"hubble","equipmentId":"hubble",
+    "missionOverview":"The Hubble Space Telescope is an observatory that studies the universe in ultraviolet, visible, and near-infrared light. NASA and ESA developed it to observe from above Earth's atmosphere, where air does not blur or absorb the same light that telescopes must observe through from the ground.",
+    "majorDiscoveries":["Hubble observations of distant supernovae helped establish that the universe's expansion is accelerating, leading to the concept of dark energy.","Hubble has measured the atmospheres of planets around other stars and produced detailed observations of galaxies, stars, and objects in our own solar system."],
+    "status":"NASA lists Hubble as an active mission. It continues scientific observations, although its orbit slowly loses altitude due to atmospheric drag.",
+    "location":"Hubble is in low Earth orbit, circling Earth about every 95 minutes. It is much closer to Earth than Webb, which orbits the Sun near L2.",
+    "facts":["Hubble launched in 1990.","Astronauts serviced and upgraded it five times during Space Shuttle missions.","Hubble and Webb observe different wavelengths and can complement each other's science."],
+    "sources":[{"label":"NASA Hubble mission","url":"https://science.nasa.gov/mission/hubble/"},{"label":"NASA Hubble frequently asked questions","url":"https://science.nasa.gov/mission/hubble/overview/faqs/"}]
+  },
+  {
+    "id":"voyager-1","equipmentId":"voyager-1",
+    "missionOverview":"Voyager 1 is a robotic spacecraft launched in 1977 to study the outer planets. After encounters with Jupiter and Saturn, its mission continued outward to investigate the region beyond the Sun's heliosphere, the bubble shaped by the solar wind.",
+    "majorDiscoveries":["Voyager 1's Jupiter encounter revealed active volcanoes on the moon Io and a faint ring around Jupiter.","In 2012, Voyager 1 became the first spacecraft to enter interstellar space and began measuring that environment directly."],
+    "status":"The Voyager 1 mission is active. NASA restored communication after a brief pause in October 2026; the spacecraft continues to send data from its remaining operating science instruments.",
+    "location":"Voyager 1 is in interstellar space, beyond the heliosphere and far beyond the outer planets. It is still in the Milky Way and has not left the solar system in the broader sense that includes the distant Oort Cloud.",
+    "facts":["Voyager 1 launched after Voyager 2, even though Voyager 2 launched first.","It carries a Golden Record with sounds, music, and images from Earth.","Its radio signal takes many hours to reach Earth because of the enormous distance."],
+    "sources":[{"label":"NASA Voyager 1 mission","url":"https://science.nasa.gov/mission/voyager/voyager-1/"},{"label":"NASA Voyager mission overview","url":"https://science.nasa.gov/mission/voyager/mission-overview/"},{"label":"NASA Voyager 1 communications update, Oct. 29, 2026","url":"https://science.nasa.gov/blogs/voyager/2026/10/29/nasas-voyager-1-conserves-power-resolves-brief-communications-pause/"}]
+  },
+  {
+    "id":"voyager-2","equipmentId":"voyager-2",
+    "missionOverview":"Voyager 2 is a robotic spacecraft launched in 1977 to explore the outer planets. Its route took it past Jupiter, Saturn, Uranus, and Neptune before continuing beyond the heliosphere into interstellar space.",
+    "majorDiscoveries":["Voyager 2 is the only spacecraft to have visited Uranus and Neptune, returning the first close-up observations of those planets and their systems.","Its flybys also expanded knowledge of Jupiter and Saturn, including their moons, rings, and atmospheres."],
+    "status":"Voyager 2 remains part of NASA's active Voyager Interstellar Mission and continues to send science data to Earth through the Deep Space Network.",
+    "location":"Voyager 2 is in interstellar space, outside the heliosphere and beyond Neptune's orbit. It is traveling away from the Sun in a different direction from Voyager 1.",
+    "facts":["Voyager 2 launched on Aug. 20, 1977, before Voyager 1.","It flew by Neptune in 1989, completing the first close-up survey of all four giant planets.","It crossed the heliopause into interstellar space in 2018."],
+    "sources":[{"label":"NASA Voyager mission overview","url":"https://science.nasa.gov/mission/voyager/mission-overview/"},{"label":"NASA Voyager 2 spacecraft and instrument status","url":"https://science.nasa.gov/mission/voyager/spacecraft/"},{"label":"NASA Voyager current positions","url":"https://science.nasa.gov/mission/voyager/where-are-voyager-1-and-voyager-2-now/"}]
+  }
+]

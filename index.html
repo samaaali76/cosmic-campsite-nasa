@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Explore the stories of inactive space equipment on the Moon and Mars.">
+  <meta name="description" content="Choose a destination, meet the spacecraft and tools that explored it, and follow the discoveries that changed our view of the universe.">
   <title>Cosmic Campsite | NASA Space Apps Challenge 2026</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/basmala.css">
@@ -20,21 +20,34 @@
   </header>
   <main id="home">
     <section class="hero">
-      <p class="eyebrow">NASA Space Apps Challenge 2026</p>
-      <h1>Every footprint<br>has a story.</h1>
-      <p>Visit the Moon and Mars to discover the machines explorers left behind—and the science they made possible.</p>
-      <a class="button" href="#destinations">Start exploring</a>
+      <p class="eyebrow">A field guide to worlds beyond Earth</p>
+      <h1>Go farther.<br>See more.</h1>
+      <p>Choose a destination and follow the machines, missions, and discoveries that opened a window onto the Moon, Mars, and the distant universe.</p>
+      <div class="hero-actions"><a class="button" href="#destinations">Start your journey <span aria-hidden="true">↗</span></a><a class="button-secondary" href="#timeline">Explore the missions</a></div>
+      <p class="hero-caption">Three destinations · A living record of exploration</p>
     </section>
     <section id="destinations" class="section">
-      <div class="section-heading"><p class="eyebrow">Choose your destination</p><h2>Worlds beyond Earth</h2></div>
+      <div class="section-heading"><p class="eyebrow">Choose your destination</p><h2>Where will curiosity take you?</h2><p>Every mission begins with a question. Pick a world to explore its machines, mission stories, milestones, and science.</p></div>
       <div id="destination-list" class="card-grid" aria-live="polite"></div>
+    </section>
+    <section class="journey-intro" aria-label="Learning journey"><span>01 · Choose a world</span><i></i><span>02 · Meet the explorers</span><i></i><span>03 · Follow the discoveries</span></section>
+    <section id="equipment" class="section section-alt" aria-labelledby="equipment-heading">
+      <div class="section-heading equipment-heading">
+        <div><p class="eyebrow">Mission hardware</p><h2 id="equipment-heading">Equipment exploration</h2><p id="equipment-destination" class="equipment-destination" aria-live="polite"></p></div>
+        <a class="equipment-back" href="#destinations">← Choose another destination</a>
+      </div>
+      <div id="equipment-list" class="card-grid" aria-live="polite"></div>
+      <section id="equipment-detail" class="equipment-detail" aria-live="polite" hidden></section>
     </section>
     <section id="artifacts" class="section section-alt">
       <div class="section-heading"><p class="eyebrow">Left on another world</p><h2>Field artifacts</h2></div>
       <div id="artifact-list" class="card-grid" aria-live="polite"></div>
+      <nav class="journey-actions" aria-label="Continue learning"><a href="#timeline">Explore timeline</a><a href="#quiz">Continue to quiz</a><a href="#progress">View progress</a></nav>
     </section>
     <section id="stories" class="section">
       <div class="section-heading"><p class="eyebrow">Learn as you explore</p><h2>Mission stories</h2></div>
+      <div id="artifact-story-index" class="card-grid artifact-story-index" aria-label="Available artifact mission stories" aria-live="polite"></div>
+      <article id="artifact-story-view" class="artifact-story-view" aria-live="polite" hidden></article>
       <div id="story-list" class="card-grid" aria-live="polite"></div>
     </section>
     <section id="timeline" class="section section-alt">
